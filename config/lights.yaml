@@ -14,6 +14,11 @@
 #
 #   for example: 8-0-1-2 means "board address 8, outputs 0, 1, and 2 are RGB, respectively"
 #   IMPORTANT NOTE! These output numbers are not pin numbers on the PD-LED!!!
+#
+# Light naming convention:
+# l_lightname - inserts
+# l_f_lightname - flashers
+# l_g_lightname - general illumination
 
 lights:
     # inserts start here
@@ -439,20 +444,268 @@ lights:
         label: "Flasher (right flipper guide)"
         default_on_color: white
         tags: flasher
-    l_27:
+    # end of flashers
+    
+    l_pop:
         number: 3-78-79-80
-        label: ""
+        label: "Pop bumper"
         tags: playfield_insert
-    l_28:
+    l_trough:
+        #inventing a new LED cause trough lamps are cool, daddio!
         number: 3-81-82-83
-        label: ""
+        label: "Trough"
         tags: playfield_insert
-        # oldF14number: 
     ### end of PD-LED #3
+    ### start of PD-LED #4
+    # start of cabinet buttons
+    # NOTE: no controlled lighting for coin slots
+    l_cab_start_game:
+        number: 4-0-1-2
+        label: "Cabinet Start Game"
+        tags: cabinet
+        default_on_color: yellow
+    l_cab_change_game:
+        number: 4-3-4-5
+        label: "Cabinet Change Game"
+        tags: cabinet
+        default_on_color: red
+    l_cab_extra_ball:
+        number: 4-6-7-8
+        label: "Cabinet Extra Ball"
+        tags: cabinet
+        default_on_color: blue
+    
+    # start of GI
+    l_g_flipper_lane_left:
+        number: 4-9-10-11
+        label: "GI Left flipper lane"
+        tags: gi
+    l_g_flipper_lane_right:
+        number: 4-12-13-14
+        label: "GI Right flipper lane"
+        tags: gi
+    l_g_sling_left_upper:
+        number: 4-15-16-17
+        label: "GI Left sling - Upper"
+        tags: gi
+    l_g_sling_left_lower:
+        number: 4-18-19-20
+        label: "GI Left sling - Lower"
+        tags: gi
+    l_g_sling_right_upper:
+        number: 4-21-22-23
+        label: "GI Right sling - Upper"
+        tags: gi
+    l_g_sling_right_lower:
+        number: 4-24-25-26
+        label: "GI Right sling - Lower"
+        tags: gi
+    l_g_lower_tom_lower:
+        number: 4-27-28-29
+        label: "GI Lower TOM - Lower"
+        tags: gi
+    l_g_lower_tom_upper:
+        number: 4-30-31-32
+        label: "GI Lower TOM - Upper"
+        tags: gi
+    l_g_lower_cat_lower:
+        number: 4-33-34-35
+        label: "GI Lower CAT - Lower"
+        tags: gi
+    l_g_lower_cat_upper:
+        number: 4-36-37-38
+        label: "GI Lower CAT - Upper"
+        tags: gi
+    l_g_123_lower:
+        number: 4-39-40-41
+        label: "GI 123 - Lower"
+        tags: gi
+    l_g_123_upper:
+        number: 4-42-43-44
+        label: "GI 123 - Upper"
+        tags: gi
+    l_g_456_lower:
+        number: 4-45-46-47
+        label: "GI 456 - Lower"
+        tags: gi
+    l_g_456_upper:
+        number: 4-48-49-50
+        label: "GI 456 - Upper"
+        tags: gi
+    l_g_lower_left_plastic:
+        number: 4-51-52-53
+        label: "GI Lower left plastic"
+        tags: gi
+    l_g_lower_right_plastic_lower:
+        number: 4-54-55-56
+        label: "GI Lower right plastic - Lower"
+        tags: gi
+    l_g_lower_right_plastic_middle:
+        number: 4-57-58-59
+        label: "GI Lower right plastic - Middle"
+        tags: gi
+    l_g_lower_right_plastic_upper:
+        number: 4-60-61-62
+        label: "GI Lower right plastic - Upper"
+        tags: gi
+    l_g_upper_left_plastic_lower:
+        number: 4-63-64-65
+        label: "GI Upper left plastic - Lower"
+        tags: gi
+    l_g_upper_left_plastic_middle:
+        number: 4-66-67-68
+        label: "GI Upper left plastic - Middle"
+        tags: gi
+    l_g_upper_left_plastic_upper:
+        number: 4-69-70-71
+        label: "GI Upper left plastic - Upper"
+        tags: gi
+    l_g_upper_right_plastic_lower:
+        number: 4-72-73-74
+        label: "GI Upper right plastic - Lower"
+        tags: gi
+    l_g_upper_right_plastic_middle:
+        number: 4-75-76-77
+        label: "GI Upper right plastic - Middle"
+        tags: gi
+    l_g_upper_right_plastic_upper:
+        number: 4-78-79-80
+        label: "GI Upper right plastic - Upper"
+        tags: gi
+    l_g_upper_right_plastic_top:
+        number: 4-81-82-83
+        label: "GI Upper right plastic - Top"
+        tags: gi
+    ### end of PD-LED #4
+    ### start of PD-LED #5
+    l_g_top_plastic_left:
+        number: 5-0-1-2
+        label: "GI Top plastic - Left"
+        tags: gi
+    l_g_top_plastic_leftmiddle:
+        number: 5-3-4-5
+        label: "GI Top plastic - Left-middle"
+        tags: gi
+    l_g_top_plastic_middle:
+        number: 5-6-7-8
+        label: "GI Top plastic - Middle"
+        tags: gi
+    l_g_top_plastic_rightmiddle:
+        number: 5-9-10-11
+        label: "GI Top plastic - Right-middle"
+        tags: gi
+    l_g_top_plastic_right:
+        number: 5-12-13-14
+        label: "GI Top plastic - Right"
+        tags: gi
+    l_g_upper_tom_lower:
+        number: 5-15-16-17
+        label: "GI Upper TOM - Lower"
+        tags: gi
+    l_g_upper_tom_upper:
+        number: 5-18-19-20
+        label: "GI Upper TOM - Upper"
+        tags: gi
+    l_g_upper_cat_lower:
+        number: 5-21-22-23
+        label: "GI Upper CAT - Lower"
+        tags: gi
+    l_g_upper_cat_upper:
+        number: 5-24-25-26
+        label: "GI Upper CAT - Upper"
+        tags: gi
+    l_g_orbit_plastic_left:
+        number: 5-27-28-29
+        label: "GI Orbit plastic - Left"
+        tags: gi
+    l_g_orbit_plastic_middle:
+        number: 5-30-31-32
+        label: "GI Orbit plastic - Middle"
+        tags: gi
+    l_g_orbit_plastic_right:
+        number: 5-33-34-35
+        label: "GI Orbit plastic - Right"
+        tags: gi
 
-#TODO: Cabinet lights
-#TODO: Beacons
-#TODO: Radar
-#TODO: GI
+    # start of radar grid
+    l_radar_upper_left:
+        number: 5-36-37-38
+        label: "Radar - Upper-left"
+        tags: radar
+        default_on_color: green
+    l_radar_upper:
+        number: 5-39-40-41
+        label: "Radar - Upper"
+        tags: radar
+        default_on_color: green
+    l_radar_upper_right:
+        number: 5-42-43-44
+        label: "Radar - Upper-right"
+        tags: radar
+        default_on_color: green
+    l_radar_left:
+        number: 5-45-46-47
+        label: "Radar - Left"
+        tags: radar
+        default_on_color: green
+    l_radar_center:
+        number: 5-48-49-50
+        label: "Radar - Center"
+        tags: radar
+        default_on_color: green
+    l_radar_right:
+        number: 5-51-52-53
+        label: "Radar - Right"
+        tags: radar
+        default_on_color: green
+    l_radar_lower_left:
+        number: 5-54-55-56
+        label: "Radar - Lower-left"
+        tags: radar
+        default_on_color: green
+    l_radar_lower:
+        number: 5-57-58-59
+        label: "Radar - Lower"
+        tags: radar
+        default_on_color: green
+    l_radar_lower_right:
+        number: 5-60-61-62
+        label: "Radar - Lower-right"
+        tags: radar
+        default_on_color: green
 
-    # GI starts here
+    # start of beacons
+    l_beacon_left:
+        number: 5-63-64-65
+        label: "Left beacon"
+        tags: beacon
+        default_on_color: red
+    l_beacon_middle:
+        number: 5-66-67-68
+        label: "Middle beacon"
+        tags: beacon
+        default_on_color: white
+    l_beacon_right:
+        number: 5-69-70-71
+        label: "Right beacon"
+        tags: beacon
+        default_on_color: blue
+
+    # Excess capacity
+    l_unused1:
+        number: 5-72-73-74
+        label: "Unused 1"
+        tags: unused
+    l_unused2:
+        number: 5-75-76-77
+        label: "Unused 2"
+        tags: unused
+    l_unused3:
+        number: 5-78-79-80
+        label: "Unused 3"
+        tags: unused
+    l_unused4:
+        number: 5-81-82-83
+        label: "Unused 4"
+        tags: unused
+    ### end of PD-LED #5
