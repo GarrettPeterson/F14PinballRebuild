@@ -7,36 +7,27 @@
 # * object naming convention:
 #   * Taken from http://docs.missionpinball.org/en/latest/tutorial/3_get_flipping.html
 #   * s_ = switch, c_ = coil, l_ = light
-# * Switch numbering syntax:
-#   * Taken from http://docs.missionpinball.org/en/latest/hardware/multimorphic/switches_p3_roc.html
-#   * A0-B0-0 = Address (switch board) 0, Bank (switch bank) 0, (pin) 0
-# * Coil numbering syntax:
-#   * Taken from http://docs.missionpinball.org/en/latest/hardware/multimorphic/drivers.html
-#   * For PD-16 boards: Ax-By-z (x=board address, 0-31) (y=bank address, 0=A and 1=B) (z=output number, 0-7)
+
+
+# break out config sections to keep files a sane size
+config:
+    - keyboard.yaml
+    - switches.yaml
+    - coils.yaml
 
 
 hardware:
     platform: p3_roc
-    driverboards: pdb
+    driverboards: pdb    
 
-    
-    
-    
+
 p_roc:
     # MPF will send a watchdog ping to P3ROC every second
     use_watchdog: true
     watchdog_time: 1s
 
 
-keyboard:
-    z:
-        switch: s_left_flipper
-    "/":
-        switch: s_right_flipper
 
-
-
-        
 displays:
     window:
         width: 800
@@ -61,39 +52,6 @@ slides:
 slide_player:
     init_done: welcome_slide
     mode_attract_started: attract_started
-   
-   
-# More switch info here: https://docs.google.com/spreadsheets/d/1--GimHbPwnZ9i_lIzwtXTCABTR2x34GgdsAS22blOPc/edit#gid=1488521778
-switches:
-    s_left_flipper:
-        number: A0-B0-0
-        tags: left_flipper
-        # oldF14 switch: none
-    s_right_flipper: 
-        number: A0-B0-1
-        tags: right_flipper
-        # oldF14 switch: none
-
-
-        
-# More coil info here: https://docs.google.com/spreadsheets/d/1--GimHbPwnZ9i_lIzwtXTCABTR2x34GgdsAS22blOPc/edit#gid=365262036
-coils:
-    c_flipper_left_main:
-        number: A1-B0-3
-        default_pulse_ms: 5 # TODO: find a real value
-        default_hold_power: .1 # percentage power for hold
-    # CJK disabled, I think we should use pulse timings to control power and hold, and ignore the dual-windings
-    #c_flipper_left_hold:
-        #number: 1  # check your platform-specific documentation for the actual numbers
-        #allow_enable: true
-    c_flipper_right_main:
-        number: A1-B0-1
-        default_pulse_ms: 5 # TODO: find a real value
-        default_hold_power: .1 # percentage power for hold
-    # CJK disabled, I think we should use pulse timings to control power and hold, and ignore the dual-windings
-    #c_flipper_right_hold:
-        #number: 3
-        #allow_enable: yes
 
         
         
@@ -103,17 +61,5 @@ playfields:
         tags: default
         default_source_device: None  # use None in steps before 8
 
-   
-flippers:
-    left_flipper:
-        main_coil: c_flipper_left_main
-        #hold_coil: c_flipper_left_hold
-        activation_switch: s_left_flipper
-        enable_events: machine_reset_phase_3 # always enable flippers, not just during play
-    right_flipper:
-        main_coil: c_flipper_right_main
-        #hold_coil: c_flipper_right_hold
-        activation_switch: s_right_flipper
-        enable_events: machine_reset_phase_3 # always enable flippers, not just during play
          
         

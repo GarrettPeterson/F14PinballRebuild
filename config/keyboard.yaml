@@ -1,0 +1,11 @@
+#config_version=5
+
+########################
+# Keyboard config file #
+########################
+
+keyboard:
+    z:
+        switch: s_left_flipper
+    "/":
+        switch: s_right_flipper

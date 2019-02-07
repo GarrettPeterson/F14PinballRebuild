@@ -1,0 +1,30 @@
+#config_version=5
+
+#####################
+# Coils config file #
+#####################
+
+# * Coil numbering syntax:
+#   * Taken from http://docs.missionpinball.org/en/latest/hardware/multimorphic/drivers.html
+#   * For PD-16 boards: Ax-By-z (x=board address, 0-31) (y=bank address, 0=A and 1=B) (z=output number, 0-7)
+#
+# More coil info here: https://docs.google.com/spreadsheets/d/1--GimHbPwnZ9i_lIzwtXTCABTR2x34GgdsAS22blOPc/edit#gid=365262036
+
+
+coils:
+    c_flipper_left_main:
+        number: A1-B0-3
+        default_pulse_ms: 5 # TODO: find a real value
+        default_hold_power: .1 # percentage power for hold
+    # CJK disabled, I think we should use pulse timings to control power and hold, and ignore the dual-windings
+    #c_flipper_left_hold:
+        #number: 1  # check your platform-specific documentation for the actual numbers
+        #allow_enable: true
+    c_flipper_right_main:
+        number: A1-B0-1
+        default_pulse_ms: 5 # TODO: find a real value
+        default_hold_power: .1 # percentage power for hold
+    # CJK disabled, I think we should use pulse timings to control power and hold, and ignore the dual-windings
+    #c_flipper_right_hold:
+        #number: 3
+        #allow_enable: yes

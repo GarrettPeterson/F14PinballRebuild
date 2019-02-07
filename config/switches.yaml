@@ -1,0 +1,23 @@
+#config_version=5
+
+########################
+# Switches config file #
+########################
+
+
+# * Switch numbering syntax:
+#   * Taken from http://docs.missionpinball.org/en/latest/hardware/multimorphic/switches_p3_roc.html
+#   * A0-B0-0 = Address (switch board) 0, Bank (switch bank) 0, (pin) 0
+#
+# F14 switch info here: https://docs.google.com/spreadsheets/d/1--GimHbPwnZ9i_lIzwtXTCABTR2x34GgdsAS22blOPc/edit#gid=1488521778
+
+
+switches:
+    s_left_flipper:
+        number: A0-B0-0
+        tags: left_flipper
+        # oldF14 switch: none
+    s_right_flipper: 
+        number: A0-B0-1
+        tags: right_flipper
+        # oldF14 switch: none
