@@ -6,6 +6,12 @@
 
 keyboard:
     z:
-        switch: s_left_flipper
+        switch: s_left_flipper_button
     "/":
-        switch: s_right_flipper
+        switch: s_right_flipper_button
+    a:
+        switch: s_left_upper_flipper_button
+    "'":
+        switch: s_right_upper_flipper_button
+    s: 
+        switch: s_start_button

@@ -8,16 +8,349 @@
 # * Switch numbering syntax:
 #   * Taken from http://docs.missionpinball.org/en/latest/hardware/multimorphic/switches_p3_roc.html
 #   * A0-B0-0 = Address (switch board) 0, Bank (switch bank) 0, (pin) 0
-#
+#   * There are banks 0 (A), and 1 (B)
+#   * There are pins 0 through 7.  NOTE: Switch numbers != pin numbers! 
 # F14 switch info here: https://docs.google.com/spreadsheets/d/1--GimHbPwnZ9i_lIzwtXTCABTR2x34GgdsAS22blOPc/edit#gid=1488521778
 
+# Swtiches we don't need from oldF14's matrix:
+#   Plumb bob tilt
+#   Ball roll tilt
+#   Center coin chute
+#   Slam tilt
+#   High score reset
+#   Playfield tilt
+#   Right flipper EOS
+#   Left flipper EOS
+
+# TODO: use "type: NC" to indicate which switches are normally closed
 
 switches:
-    s_left_flipper:
+    # SW-16 number one
+    s_start_button:
         number: A0-B0-0
-        tags: left_flipper
-        # oldF14 switch: none
-    s_right_flipper: 
+        tags: start
+        label: "Start button"
+        # oldF14 switch: 3
+    s_right_coin:
         number: A0-B0-1
-        tags: right_flipper
-        # oldF14 switch: none
+        tags: 
+        label: "Right coin chute"
+        # oldF14 switch: 
+    s_outhole:
+        number: A0-B0-2
+        tags: 
+        label: "Outhole"
+        # oldF14 switch: 10
+    s_trough_right:
+        number: A0-B0-3
+        tags: 
+        label: "Trough (right)"
+        # oldF14 switch: 11
+    s_trough_right_center:
+        number: A0-B0-4
+        tags: 
+        label: "Trough (right center)"
+        # oldF14 switch: 
+    s_trough_left_center:
+        number: A0-B0-5
+        tags: 
+        label: "Trough (left center)"
+        # oldF14 switch: 13
+    s_trough_left:
+        number: A0-B0-6
+        tags: 
+        label: "Trough (left)"
+        # oldF14 switch: 14
+    s_shooter_lane:
+        number: A0-B0-7
+        tags: playfield_active
+        label: "Ball shooter lane"
+        # oldF14 switch: 16
+    s_ramp_entry:
+        number: A0-B1-0
+        tags: playfield_active
+        label: "Ramp entry (from shooter lane)"
+        # oldF14 switch: 20
+    s_right_eject:
+        number: A0-B1-1
+        tags: playfield_active
+        label: "Right eject (under shooter habitrail)"
+        # oldF14 switch: 21
+    s_left_center_eject:
+        number: A0-B1-2
+        tags: playfield_active
+        label: "Left center eject"
+        # oldF14 switch: 22
+    s_right_center_eject:
+        number: A0-B1-3
+        tags: playfield_active
+        label: "Right center eject"
+        # oldF14 switch: 23
+    s_ball_popper:
+        number: A0-B1-4
+        tags: playfield_active
+        label: "Ball popper (VUK)"
+        # oldF14 switch: 24
+    s_left_center_target:
+        number: A0-B1-5
+        tags: playfield_active
+        label: "Left center target (white)"
+        # oldF14 switch: 25
+    s_right_center_target:
+        number: A0-B1-6
+        tags: playfield_active
+        label: "Right center target (white)"
+        # oldF14 switch: 26
+    s_jet_bumper:
+        number: A0-B1-7
+        tags: playfield_active
+        label: "Jet bumper"
+        # oldF14 switch: 28
+
+    # SW-16 number two
+    s_lower_wire_ramp:
+        number: A1-B0-0
+        tags: playfield_active
+        label: "Lower wire ramp entry"
+        # oldF14 switch: 30
+    s_middle_wire_ramp:
+        number: A1-B0-1
+        tags: playfield_active
+        label: "Middle wire ramp entry"
+        # oldF14 switch: 31
+    s_upper_wire_ramp:
+        number: A1-B0-2
+        tags: playfield_active
+        label: "Upper wire ramp entry"
+        # oldF14 switch: 32
+    s_t_lower_left:
+        number: A1-B0-3
+        tags: playfield_active
+        label: "T target (lower left)"
+        # oldF14 switch: 33
+    s_o_lower_left:
+        number: A1-B0-4
+        tags: playfield_active
+        label: "O target (lower-left)"
+        # oldF14 switch: 34
+    s_m_lower_left:
+        number: A1-B0-5
+        tags: playfield_active
+        label: "M target (lower-left)"
+        # oldF14 switch: 35
+    s_t_lower_right:
+        number: A1-B0-6
+        tags: playfield_active
+        label: "T target (lower-right)"
+        # oldF14 switch: 36
+    s_a_lower_right:
+        number: A1-B0-7
+        tags: playfield_active
+        label: "A target (lower-right)"
+        # oldF14 switch: 37
+    s_c_lower_right:
+        number: A1-B1-0
+        tags: playfield_active
+        label: "C target (lower-right)"
+        # oldF14 switch: 38
+    s_3_target:
+        number: A1-B1-1
+        tags: playfield_active
+        label: "3 target"
+        # oldF14 switch: 41
+    s_2_target:
+        number: A1-B1-2
+        tags: playfield_active
+        label: "2 target"
+        # oldF14 switch: 42
+    s_1_target:
+        number: A1-B1-3
+        tags: playfield_active
+        label: "1 target"
+        # oldF14 switch: 43
+    s_4_target:
+        number: A1-B1-4
+        tags: playfield_active
+        label: "4 target"
+        # oldF14 switch: 44
+    s_5_target:
+        number: A1-B1-5
+        tags: playfield_active
+        label: "5 target"
+        # oldF14 switch: 45
+    s_6_target:
+        number: A1-B1-6
+        tags: playfield_active
+        label: "6 target"
+        # oldF14 switch: 46
+    s_top_right_loop:
+        number: A1-B1-7
+        tags: playfield_active
+        label: "Top right loop (above spinner)"
+        # oldF14 switch: 47
+    # SW-16 number three
+    s_spinner:
+        number: A2-B0-0
+        tags: playfield_active
+        label: "Spinner"
+        # oldF14 switch: 48
+    s_t_upper_left:
+        number: A2-B0-1
+        tags: playfield_active
+        label: "T target (upper-left)"
+        # oldF14 switch: 49
+    s_o_upper_left:
+        number: A2-B0-2
+        tags: playfield_active
+        label: "O target (upper-left)"
+        # oldF14 switch: 50
+    s_m_upper_left:
+        number: A2-B0-3
+        tags: playfield_active
+        label: "M target (upper-left)"
+        # oldF14 switch: 51
+    s_t_upper_right:
+        number: A2-B0-4
+        tags: playfield_active
+        label: "T target (upper-right)"
+        # oldF14 switch: 52
+    s_a_upper_right:
+        number: A2-B0-5
+        tags: playfield_active
+        label: "A target (upper-right)"
+        # oldF14 switch: 53
+    s_c_upper_right:
+        number: A2-B0-6
+        tags: playfield_active
+        label: "C target (upper-right)"
+        # oldF14 switch: 54
+    s_kill_yagov:
+        number: A2-B0-7
+        tags: playfield_active
+        label: "Kill General Yagov (Line of death)"
+        # oldF14 switch: 55
+    s_top_left_loop:
+        number: A2-B1-0
+        tags: playfield_active
+        label: "Top left loop"
+        # oldF14 switch: 56
+    s_left_sling:
+        # in oldF14, sling switches were for scoring only
+        number: A2-B1-1
+        tags: playfield_active
+        label: "Left sling"
+        # oldF14 switch: 57
+    s_right_sling:
+        # in oldF14, sling switches were for scoring only
+        number: A2-B1-2
+        tags: playfield_active
+        label: "Right sling"
+        # oldF14 switch: 58
+    s_left_flipper_return:
+        number: A2-B1-3
+        tags: playfield_active
+        label: "Left flipper return"
+        # oldF14 switch: 59
+    s_right_flipper_return:
+        number: A2-B1-4
+        tags: playfield_active
+        label: "Right flipper return"
+        # oldF14 switch: 60
+    s_left_drain_lane:
+        number: A2-B1-5
+        tags: playfield_active
+        label: "Left drain lane (kickback)"
+        # oldF14 switch: 61
+    s_right_drain_lane:
+        number: A2-B1-6
+        tags: playfield_active
+        label: "Right drain lane"
+        # oldF14 switch: 62
+    s_unused1:
+        number: A2-B1-7
+        tags: unused
+        label: "Unused #1"
+        # oldF14 switch: 
+    # SW-16 number four
+    s_left_flipper_button:
+        number: A3-B0-0
+        tags: flipper
+        label: "Left flipper button"
+        # oldF14 switch: n/a
+    s_right_flipper_button:
+        number: A3-B0-1
+        tags: flipper
+        label: "Right flipper button"
+        # oldF14 switch: n/a
+    s_left_upper_flipper_button:
+        # New button
+        number: A3-B0-2
+        tags: flipper
+        label: "Left upper flipper button"
+        # oldF14 switch: n/a
+    s_right_upper_flipper_button:
+        # New button
+        number: A3-B0-3
+        tags: flipper
+        label: "Right upper flipper button"
+        # oldF14 switch: n/a
+    s_change_game_button:
+        number: A3-B0-4
+        tags: 
+        label: "Change game button"
+        # oldF14 switch: n/a
+    s_extra_ball_button:
+        number: A3-B0-5
+        tags: playfield_active
+        label: "Extra ball button (cabinet)"
+        # oldF14 switch: n/a
+    s_operator_back:
+        number: A3-B0-6
+        tags: operator
+        label: "Operator: Back"
+        # oldF14 switch: 
+    s_operator_vol_down:
+        number: A3-B0-7
+        tags: operator
+        label: "Operator: Volume down"
+        # oldF14 switch: n/a
+    s_operator_vol_up:
+        number: A3-B1-0
+        tags: operator
+        label: "Operator: Volume up"
+        # oldF14 switch: n/a
+    s_operator_select:
+        number: A3-B1-1
+        tags: operator
+        label: "Operator: Select"
+        # oldF14 switch: n/a
+    s_unused2:
+        number: A3-B1-2
+        tags: unused
+        label: "Unused #2"
+        # oldF14 switch: 
+    s_unused3:
+        number: A3-B1-3
+        tags: unused
+        label: "Unused #3"
+        # oldF14 switch: 
+    s_unused4:
+        number: A3-B1-4
+        tags: unused
+        label: "Unused #4"
+        # oldF14 switch: 
+    s_unused5:
+        number: A3-B1-5
+        tags: unused
+        label: "Unused #5"
+        # oldF14 switch: 
+    s_unused6:
+        number: A3-B1-6
+        tags: unused
+        label: "Unused #6"
+        # oldF14 switch: 
+    s_unused7:
+        number: A3-B1-7
+        tags: unused
+        label: "Unused #7"
+        # oldF14 switch: 
