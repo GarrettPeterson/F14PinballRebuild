@@ -6,25 +6,180 @@
 
 # * Coil numbering syntax:
 #   * Taken from http://docs.missionpinball.org/en/latest/hardware/multimorphic/drivers.html
-#   * For PD-16 boards: Ax-By-z (x=board address, 0-31) (y=bank address, 0=A and 1=B) (z=output number, 0-7)
+#   * For PD-16 boards: Ax-By-z
+#       * x=board address, 0-31
+#       * y=bank address, 0=A and 1=B
+#       * z=output number, 0-7
 #
 # More coil info here: https://docs.google.com/spreadsheets/d/1--GimHbPwnZ9i_lIzwtXTCABTR2x34GgdsAS22blOPc/edit#gid=365262036
 
 
 coils:
-    c_flipper_left_main:
-        number: A1-B0-3
+    c_flipper_left_lower:
+        number: A0-B0-0
+        label: "Left lower flipper"
         default_pulse_ms: 5 # TODO: find a real value
         default_hold_power: .1 # percentage power for hold
-    # CJK disabled, I think we should use pulse timings to control power and hold, and ignore the dual-windings
-    #c_flipper_left_hold:
-        #number: 1  # check your platform-specific documentation for the actual numbers
-        #allow_enable: true
-    c_flipper_right_main:
+        # oldF14 solenoid number: n/a
+    c_flipper_right_lower:
+        number: A0-B0-1
+        label: "Right lower flipper"
+        default_pulse_ms: 5 # TODO: find a real value
+        default_hold_power: .1 # percentage power for hold
+        # oldF14 solenoid number: n/a
+    c_flipper_left_upper:
+        number: A0-B0-2
+        label: "Left upper flipper"
+        default_pulse_ms: 5 # TODO: find a real value
+        default_hold_power: .1 # percentage power for hold
+        # oldF14 solenoid number: n/a
+    c_flipper_right_upper:
+        number: A0-B0-3
+        label: "Right upper flipper"
+        default_pulse_ms: 5 # TODO: find a real value
+        default_hold_power: .1 # percentage power for hold
+        # oldF14 solenoid number: n/a
+    c_outhole_kicker:
+        number: A0-B0-4
+        label: "Outhole kicker"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 01A
+    c_ball_shooter_lane_feeder:
+        number: A0-B0-5
+        label: "Ball shooter lane feeder"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 02A
+    c_ball_launch:
+        number: A0-B0-6
+        label: "Ball popper (launch)"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 03A
+    c_center_right_eject:
+        number: A0-B0-7
+        label: "Center right eject"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 05A
+    c_knocker:
+        number: A0-B1-0
+        label: "Knocker"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 06A
+    c_right_eject:
+        number: A0-B1-1
+        label: "Right eject"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 07A
+    c_center_left_eject:
+        number: A0-B1-2
+        label: "Center left eject"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 10
+    c_line_of_death_kickback:
+        number: A0-B1-3
+        label: "Line of death kickback"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 12
+    c_rescue_kickback:
+        number: A0-B1-4
+        label: "Rescue kickback (left outlane)"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 13
+    c_rotating_beacons:
+        # todo: this is likely a hold coil, needs custom settings
+        number: A0-B1-5
+        label: "Rotating beacons (backbox)"
+        default_pulse_ms: 5 # TODO: find a real value
+        default_hold_power: .1 # percentage power for hold
+        # oldF14 solenoid number: 16
+    c_left_sling:
+        number: A0-B1-6
+        label: "Left sling"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 17
+    c_right_sling:
+        number: A0-B1-7
+        label: "Right sling"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 18
+
+    # start power board #2
+    c_pop_bumper:
+        number: A1-B0-0
+        label: "Pop (jet) bumper"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 20
+    c_upper_diverter:
         number: A1-B0-1
+        label: "Upper diverter - Launch ramp"
         default_pulse_ms: 5 # TODO: find a real value
-        default_hold_power: .1 # percentage power for hold
-    # CJK disabled, I think we should use pulse timings to control power and hold, and ignore the dual-windings
-    #c_flipper_right_hold:
-        #number: 3
-        #allow_enable: yes
+        # oldF14 solenoid number: 21
+    c_lower_diverter:
+        number: A1-B0-2
+        label: "Lower diverter - Launch ramp"
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 22
+    c_unused01:
+        number: A1-B0-3
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused02:
+        number: A1-B0-4
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused03:
+        number: A1-B0-5
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused04:
+        number: A1-B0-6
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused05:
+        number: A1-B0-7
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused06:
+        number: A1-B1-0
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused07:
+        number: A1-B1-1
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused08:
+        number: A1-B1-2
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused09:
+        number: A1-B1-3
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused10:
+        number: A1-B1-4
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused11:
+        number: A1-B1-5
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused12:
+        number: A1-B1-6
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
+    c_unused13:
+        number: A1-B1-7
+        label: 
+        default_pulse_ms: 5 # TODO: find a real value
+        # oldF14 solenoid number: 
