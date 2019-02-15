@@ -601,6 +601,7 @@ lights:
         label: "GI Upper left plastic - Lower"
         tags: gi
     l_g_upper_left_plastic_middle:
+    # TODO: Does this one exist?  Place on monitor if so
         number: 4-66-67-68
         label: "GI Upper left plastic - Middle"
         tags: gi
@@ -621,6 +622,7 @@ lights:
         label: "GI Upper right plastic - Upper"
         tags: gi
     l_g_upper_right_plastic_top:
+    # TODO: Does this one exist?  Place on monitor if so
         number: 4-81-82-83
         label: "GI Upper right plastic - Top"
         tags: gi
