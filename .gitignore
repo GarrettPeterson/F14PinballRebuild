@@ -43,3 +43,4 @@ pyvenv.cfg
 *.pyc
 .DS_Store
 
+data/audits.yaml
