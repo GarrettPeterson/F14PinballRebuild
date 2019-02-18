@@ -18,6 +18,7 @@ config:
     - shows.yaml
     - flippers.yaml
     - devices.yaml
+    - autofire_coils.yaml
 
 
 hardware:

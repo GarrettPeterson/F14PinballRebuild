@@ -1,0 +1,20 @@
+#config_version=5
+
+##############################
+# Autofire coils config file #
+##############################
+
+autofire_coils:
+    left_sling:
+        coil: c_left_sling
+        switch: s_left_sling
+    right_sling:
+        coil: c_right_sling
+        switch: s_right_sling
+    pop_bumper:
+        coil: c_pop_bumper
+        switch: s_jet_bumper
+    yagov:
+        # TODO: Probably want to control this coil?
+        coil: c_line_of_death_kickback
+        switch: s_kill_yagov
