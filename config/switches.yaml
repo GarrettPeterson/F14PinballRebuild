@@ -67,22 +67,18 @@ switches:
         # oldF14 switch: 16
     s_ramp_entry:
         number: A0-B1-0
-        tags: playfield_active
         label: "Ramp entry (from shooter lane)"
         # oldF14 switch: 20
     s_right_eject:
         number: A0-B1-1
-        tags: playfield_active
         label: "Right eject (under shooter habitrail)"
         # oldF14 switch: 21
     s_left_center_eject:
         number: A0-B1-2
-        tags: playfield_active
         label: "Left center eject"
         # oldF14 switch: 22
     s_right_center_eject:
         number: A0-B1-3
-        tags: playfield_active
         label: "Right center eject"
         # oldF14 switch: 23
     s_ball_popper:
