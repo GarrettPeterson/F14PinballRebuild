@@ -63,7 +63,6 @@ switches:
         # oldF14 switch: 14
     s_shooter_lane:
         number: A0-B0-7
-        tags: playfield_active
         label: "Ball shooter lane"
         # oldF14 switch: 16
     s_ramp_entry:
