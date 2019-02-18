@@ -7,12 +7,12 @@
 
 flippers:
     left_flipper:
-        main_coil: c_flipper_left_main
+        main_coil: c_flipper_left_lower
         #hold_coil: c_flipper_left_hold
-        activation_switch: s_left_flipper
+        activation_switch: s_left_flipper_button
         enable_events: machine_reset_phase_3 # always enable flippers, not just during play
     right_flipper:
-        main_coil: c_flipper_right_main
+        main_coil: c_flipper_right_lower
         #hold_coil: c_flipper_right_hold
-        activation_switch: s_right_flipper
+        activation_switch: s_right_flipper_button
         enable_events: machine_reset_phase_3 # always enable flippers, not just during play

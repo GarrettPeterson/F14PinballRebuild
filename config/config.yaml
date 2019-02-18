@@ -2,7 +2,6 @@
 #
 # notes
 # * Chris is calling the Williams F14 table "oldF14" to avoid confusion
-# * TODO CJK: set up MPF Monitor to be as cool as Jersey Jack http://docs.missionpinball.org/en/latest/tools/monitor/running.html
 # * Everything is case-sensitive!
 # * object naming convention:
 #   * Taken from http://docs.missionpinball.org/en/latest/tutorial/3_get_flipping.html
@@ -16,6 +15,8 @@ config:
     - coils.yaml
     - lights_hackjob.yaml
 #    - lights.yaml
+    - shows.yaml
+    - flippers.yaml
 
 
 hardware:
