@@ -15,3 +15,19 @@ keyboard:
         switch: s_right_upper_flipper_button
     s: 
         switch: s_start_button
+    1:
+        switch: s_left_center_eject
+    "!":
+        switch: c_center_left_eject
+    "@":
+        switch: c_center_right_eject
+    "#":
+        switch: c_right_eject
+    2:
+        switch: s_right_center_eject
+    3:
+        switch: s_right_eject
+    l: # L
+        switch: s_ramp_entry
+    o:
+        switch: s_outhole

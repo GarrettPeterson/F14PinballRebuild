@@ -1,2 +1,2 @@
 #!/bin/bash
-mpf both -x
+mpf both -X

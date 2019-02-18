@@ -30,6 +30,9 @@ p_roc:
     use_watchdog: true
     watchdog_time: 1s
 
+smart_virtual:    
+    simulate_manual_plunger: true # automatically plunge for us on virtual hardware
+    
 virtual_platform_start_active_switches:
     s_trough_left
     s_trough_left_center

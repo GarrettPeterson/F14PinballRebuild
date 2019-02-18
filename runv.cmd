@@ -1,1 +1,1 @@
-start /max mpf both -x
+start /max mpf both -X
