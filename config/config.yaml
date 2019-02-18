@@ -14,7 +14,8 @@ config:
     - keyboard.yaml
     - switches.yaml
     - coils.yaml
-    - lights.yaml
+    - lights_hackjob.yaml
+#    - lights.yaml
 
 
 hardware:

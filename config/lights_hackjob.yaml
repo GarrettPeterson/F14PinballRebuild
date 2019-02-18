@@ -1,0 +1,763 @@
+#config_version=5
+
+######################
+# Lights config file #
+#                    #
+# "POC Edition"      #
+######################
+
+# PD-LED RGB naming convention:
+#   x-r-g-b
+#
+#   x = PD-LED board address
+#   r = output number of red element
+#   g = output number of green element
+#   b = output number of blue element
+#
+#   for example: 8-0-1-2 means "board address 8, outputs 0, 1, and 2 are RGB, respectively"
+#   IMPORTANT NOTE! These output numbers are not pin numbers on the PD-LED!!!
+#
+# Light naming convention:
+# l_lightname - inserts
+# l_f_lightname - flashers
+# l_g_lightname - general illumination
+
+lights:
+    # inserts start here
+    ### start of PD-LED #1
+#    l_lites_lock_on:
+#        number: 1-0-1-2
+#        label: "Lites Lock-on"
+#        tags: playfield_insert
+#        default_on_color: red
+#        # oldF14number: 1
+#    l_lites_release:
+#        number: 1-3-4-5
+#        label: "Lites Release"
+#        tags: playfield_insert
+#        # oldF14number: 2
+#    l_hot_streak:
+#        number: 1-6-7-8
+#        label: "Hot Streak"
+#        tags: playfield_insert
+#        default_on_color: blue
+#        # oldF14number: 3
+#    l_fly_again:
+#        number: 1-9-10-11
+#        label: "Fly Again"
+#        tags: playfield_insert
+#        default_on_color: orange
+#        # oldF14number: 4
+#    l_kill_center:
+#        number: 1-12-13-14
+#        label: "Kill (center)"
+#        tags: playfield_insert
+#        # oldF14number: 5
+#    l_rescue_left_center:
+#        number: 1-15-16-17
+#        label: "Rescue (left center)"
+#        tags: playfield_insert
+#        default_on_color: orange
+#        # oldF14number: 6
+#    l_rescue_right_center:
+#        number: 1-18-19-20
+#        label: "Rescue (right center)"
+#        tags: playfield_insert
+#        default_on_color: orange
+#        # oldF14number: 7
+#    l_rescue_left_outlane:
+#        number: 1-21-22-23
+#        label: "Rescue (left outlane)"
+#        tags: playfield_insert
+#        default_on_color: orange
+#        # oldF14number: 8
+    l_alpha_kill:
+        number: 2-9-10-11
+        label: "Alpha Kill"
+        tags: playfield_insert
+        # oldF14number: 9
+    l_bravo_kill:
+        number: 2-6-7-8
+        label: "Bravo Kill"
+        tags: playfield_insert
+        # oldF14number: 10
+    l_charlie_kill:
+       number: 1-24-25-26
+       label: "Charlie Kill"
+       tags: playfield_insert
+       # oldF14number: 11
+   l_delta_kill:
+       number: 1-27-28-29
+       label: "Delta Kill"
+       tags: playfield_insert
+       # oldF14number: 12
+    l_echo_kill:
+        number: 1-30-31-32
+        label: "Echo Kill"
+        tags: playfield_insert
+        # oldF14number: 13
+    l_fox_kill:
+        number: 1-33-34-35
+        label: "Fox Kill"
+        tags: playfield_insert
+        # oldF14number: 14
+#    l_golf_kill:
+#        number: 1-12-13-14
+#        label: "Golf Kill"
+#        tags: playfield_insert
+#        # oldF14number: 15
+#    l_flight_insurance:
+#        number: 1-45-46-47
+#        label: "Flight Insurance"
+#        tags: playfield_insert
+#        default_on_color: red
+#        # oldF14number: 16
+    l_1k:
+        number: 1-21-22-23
+        label: "1K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 17
+    l_2k:
+        number: 1-0-1-2
+        label: "2K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 18
+    l_4k:
+        number: 1-3-4-5
+        label: "4K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 19
+    l_8k:
+        number: 1-6-7-8
+        label: "8K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 20
+    l_16k:
+        number: 1-9-10-11
+        label: "16K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 21
+    l_32k:
+        number: 1-45-46-47
+        label: "32K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 22
+    l_64k:
+        number: 1-42-43-44
+        label: "64K"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 23
+    l_special_left:
+        # note: left and right outlanes were wired together in oldF14
+        number: 1-69-70-71
+        label: "Special (left drain lane)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 24
+    l_special_right:
+        # note: left and right outlanes were wired together in oldF14
+        number: 1-72-73-74
+        label: "Special (right drain lane)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: n/a
+    l_2x:
+        number: 1-75-76-77
+        label: "2X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 25
+    l_3x:
+        number: 1-78-79-80
+        label: "3X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 26
+    l_4x:
+        number: 1-81-82-83
+        label: "4X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 27
+    ### end of PD-LED #1
+    ### start of PD-LED #1
+#    l_5x:
+#        number: 2-0-1-2
+#        label: "5X"
+#        tags: playfield_insert
+#        default_on_color: blue
+#        # oldF14number: 28
+#    l_6x:
+#        number: 2-3-4-5
+#        label: "6X"
+#        tags: playfield_insert
+#        default_on_color: blue
+#        # oldF14number: 29
+#    l_7x:
+#        number: 2-6-7-8
+#        label: "7X"
+#        tags: playfield_insert
+#        default_on_color: blue
+#        # oldF14number: 30
+#    l_8x:
+#        number: 2-9-10-11
+#        label: "8X"
+#        tags: playfield_insert
+#        default_on_color: blue
+#        # oldF14number: 31
+    l_bonus_x_left_loop:
+        number: 2-12-13-14
+        label: "Bonus X (left loop)"
+        tags: playfield_insert
+        default_on_color: orange
+        # oldF14number: 32
+    l_t_lower_left:
+        number: 2-15-16-17
+        label: "T (lower left)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 33
+    l_o_lower_left:
+        number: 2-18-19-20
+        label: "O (lower left)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 34
+    l_m_lower_left:
+        number: 2-21-22-23
+        label: "M (lower left)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 35
+    l_t_lower_right:
+        number: 2-24-25-26
+        label: "T (lower right)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 36
+    l_a_lower_right:
+        number: 2-27-28-29
+        label: "A (lower right)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 37
+    l_c_lower_right:
+        number: 2-30-31-32
+        label: "C (lower right)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 38
+    l_lites_kill_left:
+        number: 2-33-34-35
+        # note: left and right inlanes were wired together in oldF14
+        label: "Lites Kill (left flipper lane)"
+        tags: playfield_insert
+        # oldF14number: 39
+    l_lites_kill_right:
+        # note: left and right inlanes were wired together in oldF14
+        number: 2-36-37-38
+        label: "Lites Kill (right flipper lane)"
+        tags: playfield_insert
+        # oldF14number: n/a
+    l_landing_ball_popper:
+        number: 2-39-40-41
+        label: "Landing (ball popper)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 40
+    l_3_target:
+        number: 2-42-43-44
+        label: "3 Target"
+        tags: playfield_insert
+        # oldF14number: 41
+    l_2_target:
+        number: 2-45-46-47
+        label: "2 Target"
+        tags: playfield_insert
+        # oldF14number: 42
+    l_1_target:
+        number: 2-48-49-50
+        label: "1 Target"
+        tags: playfield_insert
+        # oldF14number: 43
+    l_4_target:
+        number: 2-51-52-53
+        label: "4 Target"
+        tags: playfield_insert
+        # oldF14number: 44
+    l_5_target:
+        number: 2-54-55-56
+        label: "5 Target"
+        tags: playfield_insert
+        # oldF14number: 45
+    l_6_target:
+        number: 2-57-58-59
+        label: "6_target"
+        tags: playfield_insert
+        # oldF14number: 46
+    l_release_ball_popper:
+        number: 2-60-61-62
+        label: "Release (ball popper)"
+        tags: playfield_insert
+        # oldF14number: 47
+    l_lock_on_ball_popper:
+        number: 2-63-64-65
+        label: "Lock-on (ball popper)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 48
+    l_t_upper_left:
+        number: 2-66-67-68
+        label: "T (upper left)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 49
+    l_o_upper_left:
+        number: 2-69-70-71
+        label: "O (upper left)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 50
+    l_m_upper_left:
+        number: 2-72-73-74
+        label: "M (upper left)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 51
+    l_t_upper_right:
+        number: 2-75-76-77
+        label: "T (upper right)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 52
+    l_a_upper_right:
+        number: 2-78-79-80
+        label: "A (upper right)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 53
+    l_c_upper_right:
+        number: 2-81-82-83
+        label: "C (upper right)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 54
+    ### end of PD-LED #2
+    ### start of PD-LED #3
+    l_bonus_x_right_loop:
+        number: 3-0-1-2
+        label: "Bonus X (right loop)"
+        tags: playfield_insert
+        default_on_color: orange
+        # oldF14number: 55
+    l_2000_spinner:
+        number: 3-3-4-5
+        label: "2000 Spinner"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 56
+# TODO: Are we going to use these little nub lights on the plastic ramp?
+    l_lock_top_ramp:
+        number: 3-6-7-8
+        label: "Lock Top Ramp (red)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 57
+    l_lock_middle_ramp:
+        number: 3-9-10-11
+        label: "Lock Middle Ramp (red)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 58
+    l_lock_low_ramp:
+        number: 3-12-13-14
+        label: "Lock Low Ramp (red)"
+        tags: playfield_insert
+        default_on_color: red
+        # oldF14number: 59
+    l_landing_top_ramp:
+        number: 3-15-16-17
+        label: "Landing Top Ramp (blue)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 60
+    l_landing_middle_ramp:
+        number: 3-18-19-20
+        label: "Landing Middle Ramp (blue)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 61
+    l_landing_low_ramp:
+        number: 3-21-22-23
+        label: "Landing Low Ramp (blue)"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 62
+    l_ripoff:
+        number: 3-24-25-26
+        label: "Ripoff (Line of Death)"
+        tags: playfield_insert
+        # oldF14number: 63
+    l_extra_ball:
+        number: 3-27-28-29
+        label: "Extra Ball (Line of Death)"
+        tags: playfield_insert
+        default_on_color: orange
+        # oldF14number: 64
+
+    # flashers start here
+    l_f_backbox_1: #left-most
+        number: 3-30-31-32
+        label: "Flasher backbox 1 (left-most)"
+        default_on_color: red
+        tags: flasher
+    l_f_backbox_2:
+        number: 3-33-34-35
+        label: "Flasher backbox 2 (second-from-left)"
+        default_on_color: red
+        tags: flasher
+    l_f_backbox_3:
+        number: 3-36-37-38
+        label: "Flasher backbox 3 (third-from-left)"
+        default_on_color: red
+        tags: flasher
+    l_f_backbox_4:
+        number: 3-39-40-41
+        label: "Flasher backbox 4 (third-from-right)"
+        default_on_color: red
+        tags: flasher
+    l_f_backbox_5:
+        number: 3-42-43-44
+        label: "Flasher backbox 5 (second-from-right)"
+        default_on_color: red
+        tags: flasher
+    l_f_backbox_6:
+        number: 3-45-46-47
+        label: "Flasher backbox 6 (right-most)"
+        default_on_color: red
+        tags: flasher
+    l_f_upper_left_red:
+        number: 3-48-49-50
+        label: "Flasher (upper left red)"
+        default_on_color: red
+        tags: flasher
+    l_f_upper_blue:
+        number: 3-51-52-53
+        label: "Flasher (upper blue)"
+        default_on_color: blue
+        tags: flasher
+    l_f_upper_right_red:
+        number: 3-54-55-56
+        label: "Flasher (upper right red)"
+        default_on_color: red
+        tags: flasher
+    l_f_upper_white:
+        number: 3-57-58-59
+        label: "Flasher (upper white)"
+        default_on_color: white
+        tags: flasher
+    l_f_left_white:
+        number: 3-60-61-62
+        label: "Flasher (left white)"
+        default_on_color: white
+        tags: flasher
+    l_f_right_blue:
+        number: 3-63-64-65
+        label: "Flasher (right blue)"
+        default_on_color: blue
+        tags: flasher
+    l_f_right_white:
+        number: 3-66-67-68
+        label: "Flasher (right white)"
+        default_on_color: white
+        tags: flasher
+    l_f_right_red:
+        number: 3-69-70-71
+        label: "Flasher (right red)"
+        default_on_color: red
+        tags: flasher
+    l_f_left_flipper_guide:
+        number: 3-72-73-74
+        label: "Flasher (left flipper guide)"
+        default_on_color: white
+        tags: flasher
+    l_f_right_flipper_guide:
+        number: 3-75-76-77
+        label: "Flasher (right flipper guide)"
+        default_on_color: white
+        tags: flasher
+    # end of flashers
+    
+    l_pop:
+        number: 3-78-79-80
+        label: "Pop bumper"
+        tags: playfield_insert
+        default_on_color: red
+    l_trough:
+        #inventing a new LED cause trough lamps are cool, daddio!
+        number: 3-81-82-83
+        label: "Trough"
+        tags: playfield_insert
+    ### end of PD-LED #3
+    ### start of PD-LED #4
+    # start of cabinet buttons
+    # NOTE: no controlled lighting for coin slots
+    l_cab_start_game:
+        number: 4-0-1-2
+        label: "Cabinet Start Game"
+        tags: cabinet
+        default_on_color: yellow
+    l_cab_change_game:
+        number: 4-3-4-5
+        label: "Cabinet Change Game"
+        tags: cabinet
+        default_on_color: red
+    l_cab_extra_ball:
+        number: 4-6-7-8
+        label: "Cabinet Extra Ball"
+        tags: cabinet
+        default_on_color: blue
+    
+    # start of GI
+    l_g_flipper_lane_left:
+        number: 4-9-10-11
+        label: "GI Left flipper lane"
+        tags: gi
+    l_g_flipper_lane_right:
+        number: 4-12-13-14
+        label: "GI Right flipper lane"
+        tags: gi
+    l_g_sling_left_upper:
+        number: 2-3-4-5
+        label: "GI Left sling - Upper"
+        tags: gi
+    l_g_sling_left_lower:
+        number: 2-0-1-2
+        label: "GI Left sling - Lower"
+        tags: gi
+    l_g_sling_right_upper:
+        number: 4-21-22-23
+        label: "GI Right sling - Upper"
+        tags: gi
+    l_g_sling_right_lower:
+        number: 4-24-25-26
+        label: "GI Right sling - Lower"
+        tags: gi
+    l_g_lower_tom_lower:
+        number: 4-27-28-29
+        label: "GI Lower TOM - Lower"
+        tags: gi
+    l_g_lower_tom_upper:
+        number: 4-30-31-32
+        label: "GI Lower TOM - Upper"
+        tags: gi
+    l_g_lower_cat_lower:
+        number: 1-36-37-38
+        label: "GI Lower CAT - Lower"
+        tags: gi
+    l_g_lower_cat_upper:
+        number: 1-39-40-41
+        label: "GI Lower CAT - Upper"
+        tags: gi
+    l_g_123_lower:
+        number: 4-39-40-41
+        label: "GI 123 - Lower"
+        tags: gi
+    l_g_123_upper:
+        number: 4-42-43-44
+        label: "GI 123 - Upper"
+        tags: gi
+    l_g_456_lower:
+        number: 4-45-46-47
+        label: "GI 456 - Lower"
+        tags: gi
+    l_g_456_upper:
+        number: 4-48-49-50
+        label: "GI 456 - Upper"
+        tags: gi
+    l_g_lower_left_plastic:
+        number: 4-51-52-53
+        label: "GI Lower left plastic"
+        tags: gi
+    l_g_lower_right_plastic_lower:
+        number: 4-54-55-56
+        label: "GI Lower right plastic - Lower"
+        tags: gi
+    l_g_lower_right_plastic_middle:
+        number: 4-57-58-59
+        label: "GI Lower right plastic - Middle"
+        tags: gi
+    l_g_lower_right_plastic_upper:
+        number: 4-60-61-62
+        label: "GI Lower right plastic - Upper"
+        tags: gi
+    l_g_upper_left_plastic_lower:
+        number: 4-63-64-65
+        label: "GI Upper left plastic - Lower"
+        tags: gi
+    l_g_upper_left_plastic_middle:
+    # TODO: Does this one exist?  Place on monitor if so
+        number: 4-66-67-68
+        label: "GI Upper left plastic - Middle"
+        tags: gi
+    l_g_upper_left_plastic_upper:
+        number: 4-69-70-71
+        label: "GI Upper left plastic - Upper"
+        tags: gi
+    l_g_upper_right_plastic_lower:
+        number: 4-72-73-74
+        label: "GI Upper right plastic - Lower"
+        tags: gi
+    l_g_upper_right_plastic_middle:
+        number: 4-75-76-77
+        label: "GI Upper right plastic - Middle"
+        tags: gi
+    l_g_upper_right_plastic_upper:
+        number: 4-78-79-80
+        label: "GI Upper right plastic - Upper"
+        tags: gi
+    l_g_upper_right_plastic_top:
+    # TODO: Does this one exist?  Place on monitor if so
+        number: 4-81-82-83
+        label: "GI Upper right plastic - Top"
+        tags: gi
+    ### end of PD-LED #4
+    ### start of PD-LED #5
+    l_g_top_plastic_left:
+        number: 5-0-1-2
+        label: "GI Top plastic - Left"
+        tags: gi
+    l_g_top_plastic_leftmiddle:
+        number: 5-3-4-5
+        label: "GI Top plastic - Left-middle"
+        tags: gi
+    l_g_top_plastic_middle:
+        number: 5-6-7-8
+        label: "GI Top plastic - Middle"
+        tags: gi
+    l_g_top_plastic_rightmiddle:
+        number: 5-9-10-11
+        label: "GI Top plastic - Right-middle"
+        tags: gi
+    l_g_top_plastic_right:
+        number: 5-12-13-14
+        label: "GI Top plastic - Right"
+        tags: gi
+    l_g_upper_tom_lower:
+        number: 5-15-16-17
+        label: "GI Upper TOM - Lower"
+        tags: gi
+    l_g_upper_tom_upper:
+        number: 5-18-19-20
+        label: "GI Upper TOM - Upper"
+        tags: gi
+    l_g_upper_cat_lower:
+        number: 5-21-22-23
+        label: "GI Upper CAT - Lower"
+        tags: gi
+    l_g_upper_cat_upper:
+        number: 5-24-25-26
+        label: "GI Upper CAT - Upper"
+        tags: gi
+    l_g_orbit_plastic_left:
+        number: 5-27-28-29
+        label: "GI Orbit plastic - Left"
+        tags: gi
+    l_g_orbit_plastic_middle:
+        number: 5-30-31-32
+        label: "GI Orbit plastic - Middle"
+        tags: gi
+    l_g_orbit_plastic_right:
+        number: 5-33-34-35
+        label: "GI Orbit plastic - Right"
+        tags: gi
+
+    # start of radar grid
+    l_radar_upper_left:
+        number: 5-36-37-38
+        label: "Radar - Upper-left"
+        tags: radar
+        default_on_color: green
+    l_radar_upper:
+        number: 5-39-40-41
+        label: "Radar - Upper"
+        tags: radar
+        default_on_color: green
+    l_radar_upper_right:
+        number: 5-42-43-44
+        label: "Radar - Upper-right"
+        tags: radar
+        default_on_color: green
+    l_radar_left:
+        number: 5-45-46-47
+        label: "Radar - Left"
+        tags: radar
+        default_on_color: green
+    l_radar_center:
+        number: 5-48-49-50
+        label: "Radar - Center"
+        tags: radar
+        default_on_color: green
+    l_radar_right:
+        number: 5-51-52-53
+        label: "Radar - Right"
+        tags: radar
+        default_on_color: green
+    l_radar_lower_left:
+        number: 5-54-55-56
+        label: "Radar - Lower-left"
+        tags: radar
+        default_on_color: green
+    l_radar_lower:
+        number: 5-57-58-59
+        label: "Radar - Lower"
+        tags: radar
+        default_on_color: green
+    l_radar_lower_right:
+        number: 5-60-61-62
+        label: "Radar - Lower-right"
+        tags: radar
+        default_on_color: green
+
+    # start of beacons
+    l_beacon_left:
+        number: 5-63-64-65
+        label: "Left beacon"
+        tags: beacon
+        default_on_color: red
+    l_beacon_middle:
+        number: 5-66-67-68
+        label: "Middle beacon"
+        tags: beacon
+        default_on_color: white
+    l_beacon_right:
+        number: 5-69-70-71
+        label: "Right beacon"
+        tags: beacon
+        default_on_color: blue
+
+    # Excess capacity
+    l_unused1:
+        number: 5-72-73-74
+        label: "Unused 1"
+        tags: unused
+    l_unused2:
+        number: 5-75-76-77
+        label: "Unused 2"
+        tags: unused
+    l_unused3:
+        number: 5-78-79-80
+        label: "Unused 3"
+        tags: unused
+    l_unused4:
+        number: 5-81-82-83
+        label: "Unused 4"
+        tags: unused
+    ### end of PD-LED #5
