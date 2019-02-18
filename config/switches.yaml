@@ -98,7 +98,6 @@ switches:
         # oldF14 switch: 26
     s_jet_bumper:
         number: A0-B1-7
-        tags: playfield_active
         label: "Jet bumper"
         # oldF14 switch: 28
 
@@ -221,7 +220,7 @@ switches:
         # oldF14 switch: 54
     s_kill_yagov:
         number: A2-B0-7
-        tags: playfield_active
+        tags:  #  playfield_active not needed cause this is autofire for now
         label: "Kill General Yagov (Line of death)"
         # oldF14 switch: 55
     s_top_left_loop:
@@ -232,13 +231,11 @@ switches:
     s_left_sling:
         # in oldF14, sling switches were for scoring only
         number: A2-B1-1
-        tags: playfield_active
         label: "Left sling"
         # oldF14 switch: 57
     s_right_sling:
         # in oldF14, sling switches were for scoring only
         number: A2-B1-2
-        tags: playfield_active
         label: "Right sling"
         # oldF14 switch: 58
     s_left_flipper_return:
