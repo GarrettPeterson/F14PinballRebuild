@@ -1,0 +1,50 @@
+#config_version=5
+
+#######################
+# Devices config file #
+#######################
+
+ball_devices:
+    bd_drain:
+        # Ball lands here when it drains, then we kick it to the trough
+        ball_switches: s_outhole
+        eject_coil: c_outhole_kicker
+        eject_targets: bd_trough
+        tags: drain
+
+    bd_trough:
+        # Up to four balls sit here waiting to be kicked to the plunger
+        ball_switches: s_trough_left, s_trough_left_center, s_trough_right_center, s_trough_right
+        eject_coil: c_ball_shooter_lane_feeder
+        eject_targets: bd_plunger
+        tags: trough, home
+        
+    bd_plunger:
+        ball_switches: s_shooter_lane
+        mechanical_eject: true
+        # Plunge is successful if we make it to the diverter switches.
+        # TODO CJK: I think this could create an edge-case failure if/when we put an auto plunger in F14, as a ball could hit the VUK and head towards the saucers just as the auto-plunger fires.
+        eject_targets: bd_left_center_saucer, bd_right_center_saucer, bd_right_saucer
+        # TODO: This is not a reliable indicator of a successful launch.  Find a better way, but until then don't make a wimpy plunge!
+        confirm_eject_type: switch
+        confirm_eject_switch: s_ramp_entry
+        # TODO: playtest eject timeout.  This is the maximum duration a ball could be plunged and manage to still make it back into the shooter lane (IOW, a failed plunge)
+        eject_timeouts: 3s
+        
+    bd_left_center_saucer:
+        # Ball lock saucer
+        # TODO: should we set auto_fire_on_unexpected_ball?
+        ball_switches: s_left_center_eject
+        eject_coil: c_center_left_eject
+
+    bd_right_center_saucer:
+        # Ball lock saucer
+        # TODO: should we set auto_fire_on_unexpected_ball?
+        ball_switches: s_right_center_eject
+        eject_coil: c_center_right_eject
+
+    bd_right_saucer:
+        # Ball lock saucer
+        # TODO: should we set auto_fire_on_unexpected_ball?
+        ball_switches: s_right_eject
+        eject_coil: c_right_eject

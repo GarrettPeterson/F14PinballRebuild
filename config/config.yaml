@@ -17,6 +17,7 @@ config:
 #    - lights.yaml
     - shows.yaml
     - flippers.yaml
+    - devices.yaml
 
 
 hardware:
@@ -29,7 +30,11 @@ p_roc:
     use_watchdog: true
     watchdog_time: 1s
 
-
+virtual_platform_start_active_switches:
+    s_trough_left
+    s_trough_left_center
+    s_trough_right_center
+    s_trough_right
 
 displays:
     window:
@@ -62,7 +67,7 @@ slide_player:
 playfields:
     playfield:
         tags: default
-        default_source_device: None  # use None in steps before 8
+        default_source_device: bd_plunger
 
          
         
