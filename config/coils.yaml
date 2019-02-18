@@ -40,16 +40,19 @@ coils:
         default_hold_power: .1 # percentage power for hold
         # oldF14 solenoid number: n/a
     c_outhole_kicker:
+        # Kicks the ball from the outhole to the trough
         number: A0-B0-4
         label: "Outhole kicker"
         default_pulse_ms: 5 # TODO: find a real value
         # oldF14 solenoid number: 01A
     c_ball_shooter_lane_feeder:
+        # Kicks the ball from the trough to the shooter lane
         number: A0-B0-5
         label: "Ball shooter lane feeder"
         default_pulse_ms: 5 # TODO: find a real value
         # oldF14 solenoid number: 02A
     c_ball_launch:
+        # This is the VUK
         number: A0-B0-6
         label: "Ball popper (launch)"
         default_pulse_ms: 5 # TODO: find a real value
