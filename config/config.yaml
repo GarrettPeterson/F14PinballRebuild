@@ -20,6 +20,9 @@ config:
     - devices.yaml
     - autofire_coils.yaml
 
+modes:
+    - spinner
+
 
 hardware:
     platform: p3_roc
