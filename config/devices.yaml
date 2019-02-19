@@ -10,6 +10,7 @@ ball_devices:
         ball_switches: s_outhole
         eject_coil: c_outhole_kicker
         eject_targets: bd_trough
+        eject_timeouts: 1s
         tags: drain
 
     bd_trough:
@@ -17,6 +18,7 @@ ball_devices:
         ball_switches: s_trough_left, s_trough_left_center, s_trough_right_center, s_trough_right
         eject_coil: c_ball_shooter_lane_feeder
         eject_targets: bd_plunger
+        eject_timeouts: 1s
         tags: trough, home
         
     bd_plunger:
@@ -36,15 +38,25 @@ ball_devices:
         # TODO: should we set auto_fire_on_unexpected_ball?
         ball_switches: s_left_center_eject
         eject_coil: c_center_left_eject
+        eject_timeouts: 500ms
 
     bd_right_center_saucer:
         # Ball lock saucer
         # TODO: should we set auto_fire_on_unexpected_ball?
         ball_switches: s_right_center_eject
         eject_coil: c_center_right_eject
+        eject_timeouts: 500ms
 
     bd_right_saucer:
         # Ball lock saucer
         # TODO: should we set auto_fire_on_unexpected_ball?
         ball_switches: s_right_eject
         eject_coil: c_right_eject
+        eject_timeouts: 500ms
+
+    bd_vuk:
+        # "Launch" VUK
+        ball_switches: s_ball_popper
+        eject_coil: c_ball_launch
+        eject_timeouts: 500ms
+        eject_targets: bd_left_center_saucer, bd_right_center_saucer, bd_right_saucer

@@ -1,0 +1,29 @@
+#config_version=5
+
+mode:
+    start_events: ball_starting
+    priority: 100
+    
+show_player:
+    s_spinner_active:
+        spinner_tick:
+            speed: 1
+            loops: 1
+
+    mode_spinner_started:
+        spinner_tick:
+            speed: 1
+            loops: -1
+    
+shows:
+    spinner_tick:
+        - time: 0
+          lights:
+            l_f_upper_right_red:
+                color: green
+                fade: 10ms
+        - time: 500ms
+          lights:
+            l_f_upper_right_red:
+                color: off
+                fade: 10ms

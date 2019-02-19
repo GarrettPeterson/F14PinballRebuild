@@ -22,6 +22,11 @@
 #   Right flipper EOS
 #   Left flipper EOS
 
+# Notes:
+#   * Can't have playfield_active on switches that are part of a ball_device.  You'll get this error:
+#       AttributeError: 'NoneType' object has no attribute 'stop'
+
+
 # TODO: use "type: NC" to indicate which switches are normally closed
 
 switches:
@@ -83,7 +88,8 @@ switches:
         # oldF14 switch: 23
     s_ball_popper:
         number: A0-B1-4
-        tags: playfield_active
+# Can't use playfield_active cause this switch is wried to the VUK ball device
+#        tags: playfield_active
         label: "Ball popper (VUK)"
         # oldF14 switch: 24
     s_left_center_target:
