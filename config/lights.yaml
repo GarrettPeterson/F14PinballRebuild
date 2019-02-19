@@ -113,43 +113,43 @@ lights:
     l_1k:
         number: 1-48-49-50
         label: "1K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 17
     l_2k:
         number: 1-51-52-53
         label: "2K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 18
     l_4k:
         number: 1-54-55-56
         label: "4K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 19
     l_8k:
         number: 1-57-58-59
         label: "8K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 20
     l_16k:
         number: 1-60-61-62
         label: "16K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 21
     l_32k:
         number: 1-63-64-65
         label: "32K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 22
     l_64k:
         number: 1-66-67-68
         label: "64K"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_k_arrows
         default_on_color: red
         # oldF14number: 23
     l_special_left:
@@ -169,19 +169,19 @@ lights:
     l_2x:
         number: 1-75-76-77
         label: "2X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 25
     l_3x:
         number: 1-78-79-80
         label: "3X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 26
     l_4x:
         number: 1-81-82-83
         label: "4X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 27
     ### end of PD-LED #1
@@ -189,25 +189,25 @@ lights:
     l_5x:
         number: 2-0-1-2
         label: "5X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 28
     l_6x:
         number: 2-3-4-5
         label: "6X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 29
     l_7x:
         number: 2-6-7-8
         label: "7X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 30
     l_8x:
         number: 2-9-10-11
         label: "8X"
-        tags: playfield_insert
+        tags: playfield_insert, bonus_x_arrows
         default_on_color: blue
         # oldF14number: 31
     l_bonus_x_left_loop:
