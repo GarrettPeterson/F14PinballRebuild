@@ -26,12 +26,12 @@ lights:
     # inserts start here
     ### start of PD-LED #1
     l_alpha_kill:
-        number: 2-9-10-11
+        number: 0-3-4-5
         label: "Alpha Kill"
         tags: playfield_insert
         # oldF14number: 9
     l_bravo_kill:
-        number: 2-6-7-8
+        number: 0-6-7-8
         label: "Bravo Kill"
         tags: playfield_insert
         # oldF14number: 10
@@ -55,6 +55,12 @@ lights:
         label: "Fox Kill"
         tags: playfield_insert
         # oldF14number: 14
+    l_golf_kill:
+        number: 1-12-13-14
+        label: "Golf Kill"
+        tags: playfield_insert
+        # oldF14number: 15
+
     l_flight_insurance:
         number: 9-45-46-47
         label: "Flight Insurance"
@@ -92,49 +98,73 @@ lights:
         default_on_color: red
         # oldF14number: 21
     l_32k:
-        number: 1-45-46-47
+        number: 1-42-43-44
         label: "32K"
         tags: playfield_insert
         default_on_color: red
         # oldF14number: 22
     l_64k:
-        number: 1-42-43-44
+        number: 1-45-46-47
         label: "64K"
         tags: playfield_insert
         default_on_color: red
         # oldF14number: 23
     l_special_left:
         # note: left and right outlanes were wired together in oldF14
-        number: 1-69-70-71
+        number: 0-69-70-71
         label: "Special (left drain lane)"
         tags: playfield_insert
         default_on_color: red
         # oldF14number: 24
     l_special_right:
         # note: left and right outlanes were wired together in oldF14
-        number: 1-72-73-74
+        number: 0-72-73-74
         label: "Special (right drain lane)"
         tags: playfield_insert
         default_on_color: red
         # oldF14number: n/a
     l_2x:
-        number: 1-75-76-77
+        number: 0-12-13-14
         label: "2X"
         tags: playfield_insert
         default_on_color: blue
         # oldF14number: 25
     l_3x:
-        number: 1-78-79-80
+        number: 0-15-16-17
         label: "3X"
         tags: playfield_insert
         default_on_color: blue
         # oldF14number: 26
     l_4x:
-        number: 1-81-82-83
+        number: 0-18-19-20
         label: "4X"
         tags: playfield_insert
         default_on_color: blue
         # oldF14number: 27
+    l_5x:
+        number: 0-24-25-26
+        label: "5X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 28
+    l_6x:
+        number: 0-27-28-29
+        label: "6X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 29
+    l_7x:
+        number: 0-36-37-38
+        label: "7X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 30
+    l_8x:
+        number: 0-39-40-41
+        label: "8X"
+        tags: playfield_insert
+        default_on_color: blue
+        # oldF14number: 31
 
     l_bonus_x_left_loop:
         number: 2-12-13-14
@@ -414,7 +444,7 @@ lights:
         default_on_color: white
         tags: flasher
     l_f_right_flipper_guide:
-        number: 3-75-76-77
+        number: 1-15-16-17
         label: "Flasher (right flipper guide)"
         default_on_color: white
         tags: flasher
@@ -451,7 +481,7 @@ lights:
     
     # start of GI
     l_g_flipper_lane_left:
-        number: 4-9-10-11
+        number: 0-0-1-2
         label: "GI Left flipper lane"
         tags: gi
     l_g_flipper_lane_right:
@@ -459,11 +489,11 @@ lights:
         label: "GI Right flipper lane"
         tags: gi
     l_g_sling_left_upper:
-        number: 2-3-4-5
+        number: 0-21-22-23
         label: "GI Left sling - Upper"
         tags: gi
     l_g_sling_left_lower:
-        number: 2-0-1-2
+        number: 1-18-19-20
         label: "GI Left sling - Lower"
         tags: gi
     l_g_sling_right_upper:
@@ -475,11 +505,11 @@ lights:
         label: "GI Right sling - Lower"
         tags: gi
     l_g_lower_tom_lower:
-        number: 4-27-28-29
+        number: 0-30-31-32
         label: "GI Lower TOM - Lower"
         tags: gi
     l_g_lower_tom_upper:
-        number: 4-30-31-32
+        number: 0-33-34-35
         label: "GI Lower TOM - Upper"
         tags: gi
     l_g_lower_cat_lower:
@@ -731,32 +761,3 @@ lights:
         tags: playfield_insert
         default_on_color: orange
         # oldF14number: 8
-    l_5x:
-        number: 9-24-25-26
-        label: "5X"
-        tags: playfield_insert
-        default_on_color: blue
-        # oldF14number: 28
-    l_6x:
-        number: 9-27-28-29
-        label: "6X"
-        tags: playfield_insert
-        default_on_color: blue
-        # oldF14number: 29
-    l_7x:
-        number: 9-30-31-32
-        label: "7X"
-        tags: playfield_insert
-        default_on_color: blue
-        # oldF14number: 30
-    l_8x:
-        number: 9-33-34-35
-        label: "8X"
-        tags: playfield_insert
-        default_on_color: blue
-        # oldF14number: 31
-    l_golf_kill:
-        number: 9-36-37-38
-        label: "Golf Kill"
-        tags: playfield_insert
-        # oldF14number: 15

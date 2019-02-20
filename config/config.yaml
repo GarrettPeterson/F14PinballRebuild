@@ -20,8 +20,8 @@ config:
     - devices.yaml
     - autofire_coils.yaml
 
-modes:
-    - spinner
+#modes:
+#    - spinner
 
 
 hardware:

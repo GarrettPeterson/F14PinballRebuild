@@ -32,7 +32,7 @@
 switches:
     # SW-16 number one
     s_start_button:
-        number: A0-B0-0
+        number: A3-B0-0
         tags: start
         label: "Start button"
         # oldF14 switch: 3
@@ -271,7 +271,7 @@ switches:
         # oldF14 switch: 
     # SW-16 number four
     s_left_flipper_button:
-        number: A3-B0-0
+        number: A0-B0-0
         tags: flipper
         label: "Left flipper button"
         # oldF14 switch: n/a

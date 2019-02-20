@@ -1,0 +1,301 @@
+#config_version=5
+
+show_player:
+#    s_left_flipper_button_active:
+#        bonus_k_arrows_color:
+#            action: play
+#            show_tokens:
+#                color: blue
+#        bonus_x_arrows_color:
+#            action: play
+#            show_tokens:
+#                color: red
+#    s_left_flipper_button_inactive:
+#        bonus_k_arrows_color:
+#            action: play
+#            show_tokens:
+#                color: red
+#        bonus_x_arrows_color:
+#            action: play
+#            show_tokens:
+#                color: blue
+  
+#    s_right_flipper_button_active:
+#       # gi_cool: stop
+#        gi_warm: play
+#    s_right_flipper_button_inactive:
+#       # gi_warm: stop
+#        gi_cool: play
+    
+    mode_attract_started:
+        attract_display_loop:
+            speed: 1
+#        attract_kill_sweep:
+#            speed: 1
+#            loops: -1
+#        gi_warm:
+#            action: play
+        all_color_test:
+            show_tokens:
+            speed: 1
+            loops: -1
+    
+shows:
+    gi_warm:
+        - duration: -1
+          lights:
+            l_g_flipper_lane_left: purple
+            l_g_flipper_lane_right: purple
+            l_g_sling_left_upper: purple
+            l_g_sling_left_lower: purple
+            l_g_sling_right_upper: purple
+            l_g_sling_right_lower: purple
+            l_g_lower_tom_lower: purple
+            l_g_lower_tom_upper: purple
+            l_g_lower_cat_lower: purple
+            l_g_lower_cat_upper: purple
+            
+    gi_cool:
+        - duration: -1
+          lights:
+            l_g_flipper_lane_left: white
+            l_g_flipper_lane_right: white
+            l_g_sling_left_upper: white
+            l_g_sling_left_lower: white
+            l_g_sling_right_upper: white
+            l_g_sling_right_lower: white
+            l_g_lower_tom_lower: white
+            l_g_lower_tom_upper: white
+            l_g_lower_cat_lower: white
+            l_g_lower_cat_upper: white
+        
+    attract_kill_sweep:
+        - time: 0
+          lights:
+            l_alpha_kill:
+                color: red
+                fade: 900ms
+            l_bravo_kill:
+                color: orange
+                fade: 900ms
+            l_charlie_kill:
+                color: yellow
+                fade: 900ms
+            l_delta_kill:
+                color: green
+                fade: 900ms
+            l_echo_kill:
+                color: blue
+                fade: 900ms
+            l_fox_kill:
+                color: indigo
+                fade: 900ms
+            l_golf_kill:
+                color: violet
+                fade: 900ms
+        - time: 1
+          lights:
+            l_alpha_kill:
+                color: violet
+                fade: 900ms
+            l_bravo_kill:
+                color: red
+                fade: 900ms
+            l_charlie_kill:
+                color: orange
+                fade: 900ms
+            l_delta_kill:
+                color: yellow
+                fade: 900ms
+            l_echo_kill:
+                color: green
+                fade: 900ms
+            l_fox_kill:
+                color: blue
+                fade: 900ms
+            l_golf_kill:
+                color: indigo
+                fade: 900ms
+        - time: 2
+          lights:
+            l_alpha_kill:
+                color: indigo
+                fade: 900ms
+            l_bravo_kill:
+                color: violet
+                fade: 900ms
+            l_charlie_kill:
+                color: red
+                fade: 900ms
+            l_delta_kill:
+                color: orange
+                fade: 900ms
+            l_echo_kill:
+                color: yellow
+                fade: 900ms
+            l_fox_kill:
+                color: green
+                fade: 900ms
+            l_golf_kill:
+                color: blue
+                fade: 900ms
+        - time: 3
+          lights:
+            l_alpha_kill:
+                color: blue
+                fade: 900ms
+            l_bravo_kill:
+                color: indigo
+                fade: 900ms
+            l_charlie_kill:
+                color: violet
+                fade: 900ms
+            l_delta_kill:
+                color: red
+                fade: 900ms
+            l_echo_kill:
+                color: orange
+                fade: 900ms
+            l_fox_kill:
+                color: yellow
+                fade: 900ms
+            l_golf_kill:
+                color: green
+                fade: 900ms
+        - time: 4
+          lights:
+            l_alpha_kill:
+                color: green
+                fade: 900ms
+            l_bravo_kill:
+                color: blue
+                fade: 900ms
+            l_charlie_kill:
+                color: indigo
+                fade: 900ms
+            l_delta_kill:
+                color: violet
+                fade: 900ms
+            l_echo_kill:
+                color: red
+                fade: 900ms
+            l_fox_kill:
+                color: orange
+                fade: 900ms
+            l_golf_kill:
+                color: yellow
+                fade: 900ms
+        - time: 5
+          lights:
+            l_alpha_kill:
+                color: yellow
+                fade: 900ms
+            l_bravo_kill:
+                color: green
+                fade: 900ms
+            l_charlie_kill:
+                color: blue
+                fade: 900ms
+            l_delta_kill:
+                color: indigo
+                fade: 900ms
+            l_echo_kill:
+                color: violet
+                fade: 900ms
+            l_fox_kill:
+                color: red
+                fade: 900ms
+            l_golf_kill:
+                color: orange
+                fade: 900ms
+        - time: 6
+          lights:
+            l_alpha_kill:
+                color: orange
+                fade: 900ms
+            l_bravo_kill:
+                color: yellow
+                fade: 900ms
+            l_charlie_kill:
+                color: green
+                fade: 900ms
+            l_delta_kill:
+                color: blue
+                fade: 900ms
+            l_echo_kill:
+                color: indigo
+                fade: 900ms
+            l_fox_kill:
+                color: violet
+                fade: 900ms
+            l_golf_kill:
+                color: red
+                fade: 900ms
+
+    bonus_k_arrows_color:
+        - time: 0
+          lights:
+            l_1k: 
+                color: (color)
+                fade: 100ms
+            l_2k:
+                color: (color)
+                fade: 200ms
+            l_4k:
+                color: (color)
+                fade: 300ms
+            l_8k:
+                color: (color)
+                fade: 400ms
+            l_16k:
+                color: (color)
+                fade: 500ms
+            l_32k:
+                color: (color)
+                fade: 600ms
+            l_64k:
+                color: (color)
+                fade: 700ms
+
+    bonus_x_arrows_color:
+        - time: 0
+          lights:
+            l_2x: 
+                color: (color)
+                fade: 100ms
+            l_3x:
+                color: (color)
+                fade: 200ms
+            l_4x:
+                color: (color)
+                fade: 300ms
+            l_5x:
+                color: (color)
+                fade: 400ms
+            l_6x:
+                color: (color)
+                fade: 500ms
+            l_7x:
+                color: (color)
+                fade: 600ms
+            l_8x:
+                color: (color)
+                fade: 700ms
+
+    all_color_test:
+        - time: 0
+          lights:
+            l_2x: white
+            l_3x: white
+            l_4x: white
+            l_5x: white
+            l_6x: white
+            l_7x: white
+            l_8x: white
+            l_1k: white
+            l_2k: white
+            l_4k: white
+            l_8k: white
+            l_16k: white
+            l_32k: white
+            l_64k: white
