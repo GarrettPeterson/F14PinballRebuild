@@ -15,13 +15,13 @@ config:
     - coils.yaml
     - lights_hackjob.yaml
 #    - lights.yaml
-    - shows.yaml
     - flippers.yaml
     - devices.yaml
     - autofire_coils.yaml
 
-#modes:
+modes:
 #    - spinner
+    - attract
 
 
 hardware:
@@ -62,9 +62,6 @@ slides:
               
 slide_player:
     init_done: welcome_slide
-
-        
-        
 
 playfields:
     playfield:

@@ -1,29 +1,7 @@
 #config_version=5
 
 show_player:
-    mode_attract_started:
-        attract_display_loop:
-            speed: 1
-        all_color_test:
-            speed: 1
-            loops: -1
+    mode_attract_started: all_color_test_loop
+#    mode_attract_started.1: attract_display_loop
     
-shows:
-    all_color_test:
-        - time: 0
-          lights:
-            l_g_flipper_lane_left: 0000ff
-#            l_2x: white
-#            l_3x: white
-#            l_4x: white
-#            l_5x: white
-#            l_6x: white
-#            l_7x: white
-#            l_8x: white
-#            l_1k: white
-#            l_2k: white
-#            l_4k: white
-#            l_8k: white
-#            l_16k: white
-#            l_32k: white
-#            l_64k: white
+

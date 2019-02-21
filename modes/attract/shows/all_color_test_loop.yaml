@@ -1,0 +1,112 @@
+#show_version=5
+
+- duration: 2
+  slides:
+    buckaroo_blue:
+      widgets:
+      - type: text
+        text: now white
+        font_size: 50
+      transition:
+        type: push
+        duration: 1s
+        direction: left
+
+- duration: 2
+  lights:
+    l_g_flipper_lane_left: ffffff
+    l_g_sling_left_lower: ffffff
+    l_alpha_kill: ffffff
+    l_bravo_kill: ffffff
+
+- duration: 2
+  slides:
+    buckaroo_red:
+      widgets:
+      - type: text
+        text: now red
+        font_size: 50
+      transition:
+        type: push
+        duration: 1
+        direction: left
+
+- duration: 2
+  lights:
+    l_g_flipper_lane_left: ff0000
+    l_g_sling_left_lower: ff0000
+    l_alpha_kill: ff0000
+    l_bravo_kill: ff0000
+
+
+- duration: 2
+  slides:
+    buckaroo_green:
+      widgets:
+      - type: text
+        text: now green
+        font_size: 50
+      transition:
+        type: push
+        duration: 1
+        direction: left
+
+- duration: 2
+  lights:
+    l_g_flipper_lane_left: 00ff00
+    l_g_sling_left_lower: 00ff00
+    l_alpha_kill: 00ff00
+    l_bravo_kill: 00ff00
+
+- duration: 2
+  slides:
+    buckaroo_blue:
+      widgets:
+      - type: text
+        text: now blue
+        font_size: 50
+      transition:
+        type: push
+        duration: 1
+        direction: left
+
+- duration: 2
+  lights:
+    l_g_flipper_lane_left: 0000ff
+    l_g_sling_left_lower: 0000ff
+    l_alpha_kill: 0000ff
+    l_bravo_kill: 0000ff
+
+- duration: 2
+  slides:
+    buckaroo_blue:
+      widgets:
+      - type: text
+        text: now off
+        font_size: 50
+      transition:
+        type: push
+        duration: 1
+        direction: left
+
+- duration: 2
+  lights:
+    l_g_flipper_lane_left: 000000
+    l_g_sling_left_lower: 000000
+    l_alpha_kill: 000000
+    l_bravo_kill: 000000
+
+#            l_2x: white
+#            l_3x: white
+#            l_4x: white
+#            l_5x: white
+#            l_6x: white
+#            l_7x: white
+#            l_8x: white
+#            l_1k: white
+#            l_2k: white
+#            l_4k: white
+#            l_8k: white
+#            l_16k: white
+#            l_32k: white
+#            l_64k: white

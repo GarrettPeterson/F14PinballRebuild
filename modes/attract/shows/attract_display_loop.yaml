@@ -28,7 +28,7 @@
               duration: .5s
               repeat: -1
       - type: Text
-        text: FREE PLAY
+        text: FREE Play
         color: green
         y: 10
         anchor_y: bottom
